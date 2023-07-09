@@ -144,3 +144,10 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'temirlansadykov2004@gmail.com'
 EMAIL_HOST_PASSWORD = 'P0vV6bIqmz7LxUrG'
 EMAIL_USE_TLS = True
+
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_HTTPONLY = True
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://web-production-1cd3.up.railway.app',
+]
