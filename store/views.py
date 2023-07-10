@@ -61,7 +61,7 @@ def add_product(request):
             form = ProductForm(request.POST)
             if form.is_valid():
                 product = form.save(commit=False)
-                product.user = request.user
+                product.seller = request.user
                 product.save()
                 return redirect('product-list')
         else:
